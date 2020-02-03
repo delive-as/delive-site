@@ -1,0 +1,74 @@
+//
+// style.scss
+//
+
+@import "variables";
+@import "bootstrap-custom";
+@import "components";
+@import "general";
+@import "helper";
+@import "menu";
+@import "home";
+@import "solution";
+@import "video";
+@import "latest";
+@import "team";
+@import "contact";
+@import "footer";
+
+.Typist {
+	display: inline;
+}
+li.active > a {
+	color: #d81935 !important;
+}
+
+.main-slider > .slides {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+}
+
+.nav-link {
+	border-radius: 10px !important;
+}
+
+.pagination .active a {
+	color: #ffffff !important;
+}
+
+a {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.link {
+	a {
+		&:hover {
+			color: $link !important;
+		}
+	}
+}
+
+.greyed {
+	img {
+		filter: grayscale(100%);
+		&:hover {
+			filter: none;
+		}
+	}
+}
+
+.back-to-top {
+	line-height: 31px !important;
+}
+.progress-bar {
+	background-color: #d81935;
+}
+
+#mt-1 {
+	margin-top: 5px !important;
+}
+#mb-1 {
+	margin-top: 5px !important;
+}
