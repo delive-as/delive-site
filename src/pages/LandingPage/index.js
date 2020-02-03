@@ -104,7 +104,7 @@ class Index extends Component {
 										}
 									},
 									size: {
-										value: 1.5
+										value: 1
 									},
 									line_linked: {
 										enable: false,
@@ -135,6 +135,7 @@ class Index extends Component {
 							}}
 							style={{
 								width: "100%",
+								height: "auto",
 								backgroundColor: "#ffffff",
 								position: "absolute",
 								top: "0",
