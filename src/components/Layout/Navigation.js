@@ -114,9 +114,10 @@ class Topbar extends Component {
 								<li>
 									<Link to="/#solution">Solution</Link>
 								</li>
-								<li>
+								{/* <li>
 									<Link to="/#trial">Trial</Link>
 								</li>
+								*/}
 								<li>
 									<Link to="/#team">Team</Link>
 								</li>

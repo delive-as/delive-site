@@ -25,7 +25,7 @@ class Action extends Component {
 	render() {
 		return (
 			<section
-				className="bg-cta mt-100 border-top border-bottom"
+				className="bg-cta border-top border-bottom"
 				style={{
 					background: `url(${bgPath})`
 				}}
@@ -35,7 +35,8 @@ class Action extends Component {
 						<Col className="text-center">
 							<div className="section-title text-primary">
 								<h4 className="main-title mb-4">
-									What About You?
+									Interested
+									<span className="text-secondary">?</span>
 								</h4>
 								<p className="text-secondary para-desc mx-auto mb-0">
 									Thinking of working with us for your city,

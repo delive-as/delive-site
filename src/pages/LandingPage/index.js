@@ -10,7 +10,7 @@ import droneStandby from "../../images/drone/droneStandby.png";
 import Partner from "./Partner";
 import Purpose from "./Purpose";
 import Solution from "./Solution";
-import Trial from "./Trial";
+// import Trial from "./Trial";
 import Action from "./Action";
 import Team from "./Team";
 import Latest from "./Latest";
@@ -223,9 +223,9 @@ class Index extends Component {
 				</section>
 
 				{/* Trial */}
-				<section id="trial">
+				{/* <section id="trial">
 					<Trial />
-				</section>
+				</section> */}
 
 				{/* Action */}
 				<section id="action">
