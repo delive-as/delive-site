@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col } from "reactstrap";
+import Particles from "react-particles-js";
 
 import droneStandby from "../../images/drone/droneStandby.png";
 
@@ -65,6 +66,81 @@ class Index extends Component {
 					id="home"
 				>
 					<div className="home-center">
+						<Particles
+							params={{
+								particles: {
+									number: {
+										value: 50,
+										density: {
+											enable: false
+										}
+									},
+									color: {
+										value: "#d81935"
+									},
+									shape: {
+										type: "polygon",
+										stroke: {
+											width: 2,
+											color: "#d81935"
+										},
+										polygon: {
+											nb_sides: 7
+										},
+										image: {
+											src: "img/github.svg",
+											width: 100,
+											height: 100
+										}
+									},
+									opacity: {
+										value: 1,
+										random: true,
+										anim: {
+											enable: true,
+											speed: 0.25,
+											opacity_min: 0,
+											sync: false
+										}
+									},
+									size: {
+										value: 1.5
+									},
+									line_linked: {
+										enable: false,
+										color: "#202943",
+										opacity: 1
+									},
+									move: {
+										enable: true,
+										speed: 5,
+										direction: "top-left",
+										random: false,
+										straight: true,
+										out_mode: "out"
+									}
+								},
+								interactivity: {
+									events: {
+										onhover: {
+											enable: true,
+											mode: "grab"
+										},
+										onclick: {
+											enable: true,
+											mode: "push"
+										}
+									}
+								}
+							}}
+							style={{
+								width: "100%",
+								backgroundColor: "#ffffff",
+								position: "absolute",
+								top: "0",
+								left: "0"
+							}}
+						/>
 						<div className="home-desc-center">
 							<div className="container">
 								<Row className="justify-content-center">

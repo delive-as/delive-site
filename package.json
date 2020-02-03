@@ -16,6 +16,7 @@
     "react-dom": "^16.10.2",
     "react-modal-video": "^1.2.3",
     "react-parallax": "^2.2.4",
+    "react-particles-js": "^2.7.0",
     "react-responsive-carousel": "^3.1.51",
     "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^1.2.2",
