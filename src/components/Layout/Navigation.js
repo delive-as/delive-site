@@ -106,7 +106,7 @@ class Topbar extends Component {
 						>
 							<ul className="navigation-menu" id="top-menu">
 								<li>
-									<Link to="/">Home</Link>
+									<Link to="/#home">Home</Link>
 								</li>
 								<li>
 									<Link to="/#purpose">Purpose</Link>
