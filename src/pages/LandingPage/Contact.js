@@ -101,7 +101,10 @@ class Contact extends Component {
 										>
 											Contact details send successfully.
 										</Alert>
-										<form onSubmit={this.handleSubmit}>
+										<form
+											name="contact"
+											onSubmit={this.handleSubmit}
+										>
 											<Row>
 												<Col md={12}>
 													<div className="form-group position-relative">
