@@ -1,18 +1,11 @@
 // React Basic and Bootstrap
 import React, { Component } from "react";
 import { Row, Col, Alert } from "reactstrap";
+import axios from "axios";
 
 import phone from "../../images/icon/phone.svg";
 import mail from "../../images/icon/email.svg";
 import location from "../../images/icon/location.svg";
-
-const encode = data => {
-	return Object.keys(data)
-		.map(
-			key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-		)
-		.join("&");
-};
 
 class Contact extends Component {
 	constructor(props) {
@@ -20,30 +13,41 @@ class Contact extends Component {
 		this.state = {
 			name: "",
 			email: "",
+			subject: "",
 			message: "",
 			Contactvisible: false
 		};
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
+	onFormSubmit() {
+		const { name, email, subject, message } = this.state;
+		axios({
+			method: "post",
+			url: process.env.REACT_APP_MAILGUN_DOMAIN,
+			auth: {
+				username: process.env.REACT_APP_MAILGUN_API,
+				password: process.env.REACT_APP_MAILGUN_PASSWORD
+			},
+			params: {
+				from: `${name} <${email}>`,
+				to: "jio.buenviaje@gmail.com",
+				subject: subject,
+				text: message
+			}
+		});
+	}
+
 	handleSubmit = e => {
-		fetch("/", {
-			method: "POST",
-			headers: { "Content-Type": "application/x-www-form-urlencoded" },
-			body: encode({ "form-name": "contact", ...this.state })
-		})
-			.then(() => alert("Success!"))
-			.catch(error => alert(error));
-
-		this.setState({ Contactvisible: true });
-
 		e.preventDefault();
+		this.setState({ Contactvisible: true });
+		this.onFormSubmit();
 	};
 
 	handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
 	render() {
-		const { name, email, message } = this.state;
+		const { name, email, subject, message } = this.state;
 		return (
 			<React.Fragment>
 				<section className="section">
@@ -104,8 +108,6 @@ class Contact extends Component {
 										<form
 											name="contact"
 											method="post"
-											data-netlify="true"
-											data-netlify-honeypot="bot-field"
 											onSubmit={this.handleSubmit}
 										>
 											<input
@@ -169,7 +171,11 @@ class Contact extends Component {
 														<i className="mdi mdi-email ml-3 icons"></i>
 														<input
 															name="subject"
-															id="subject"
+															value={subject}
+															onChange={
+																this
+																	.handleChange
+															}
 															type="text"
 															className="form-control pl-5"
 															required
