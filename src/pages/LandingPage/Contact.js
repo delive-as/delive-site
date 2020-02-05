@@ -83,6 +83,7 @@ class Contact extends Component {
 											onSubmit={this.handleSubmit}
 											name="contact-form"
 											id="contact-form"
+											netlify
 										>
 											<Row>
 												<Col md={12}>
