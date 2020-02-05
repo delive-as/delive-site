@@ -26,10 +26,10 @@ class Contact extends Component {
 		const { name, email, subject, message } = this.state;
 		axios({
 			method: "post",
-			url: process.env.REACT_APP_MAILGUN_DOMAIN,
+			url: `https://api:key-someapikey@api.mailgun.net/v3/${process.env.REACT_APP_MAILGUN_DOMAIN}/messages`,
 			auth: {
-				username: process.env.REACT_APP_MAILGUN_API,
-				password: process.env.REACT_APP_MAILGUN_PASSWORD
+				username: "api",
+				password: process.env.REACT_APP_MAILGUN_API
 			},
 			params: {
 				from: `${name} <${email}>`,
