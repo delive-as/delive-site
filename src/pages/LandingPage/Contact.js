@@ -103,8 +103,16 @@ class Contact extends Component {
 										</Alert>
 										<form
 											name="contact"
+											method="post"
+											data-netlify="true"
+											data-netlify-honeypot="bot-field"
 											onSubmit={this.handleSubmit}
 										>
+											<input
+												type="hidden"
+												name="form-name"
+												value="contact"
+											/>
 											<Row>
 												<Col md={12}>
 													<div className="form-group position-relative">
