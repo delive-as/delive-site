@@ -3,24 +3,47 @@ import React, { Component } from "react";
 import { Row, Col, Alert } from "reactstrap";
 
 import phone from "../../images/icon/phone.svg";
-import email from "../../images/icon/email.svg";
+import mail from "../../images/icon/email.svg";
 import location from "../../images/icon/location.svg";
+
+const encode = data => {
+	return Object.keys(data)
+		.map(
+			key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+		)
+		.join("&");
+};
 
 class Contact extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			name: "",
+			email: "",
+			message: "",
 			Contactvisible: false
 		};
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
-	handleSubmit(event) {
-		event.preventDefault();
+	handleSubmit = e => {
+		fetch("/", {
+			method: "POST",
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			body: encode({ "form-name": "contact", ...this.state })
+		})
+			.then(() => alert("Success!"))
+			.catch(error => alert(error));
+
 		this.setState({ Contactvisible: true });
-	}
+
+		e.preventDefault();
+	};
+
+	handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
 	render() {
+		const { name, email, message } = this.state;
 		return (
 			<React.Fragment>
 				<section className="section">
@@ -78,12 +101,7 @@ class Contact extends Component {
 										>
 											Contact details send successfully.
 										</Alert>
-										<form
-											onSubmit={this.handleSubmit}
-											name="contact"
-											id="contact-form"
-											data-netlify="true"
-										>
+										<form onSubmit={this.handleSubmit}>
 											<Row>
 												<Col md={12}>
 													<div className="form-group position-relative">
@@ -96,7 +114,11 @@ class Contact extends Component {
 														<i className="mdi mdi-account ml-3 icons"></i>
 														<input
 															name="name"
-															id="name"
+															value={name}
+															onChange={
+																this
+																	.handleChange
+															}
 															type="text"
 															className="form-control pl-5"
 															required
@@ -114,7 +136,11 @@ class Contact extends Component {
 														<i className="mdi mdi-at ml-3 icons"></i>
 														<input
 															name="email"
-															id="email"
+															value={email}
+															onChange={
+																this
+																	.handleChange
+															}
 															type="email"
 															className="form-control pl-5"
 															required
@@ -145,7 +171,11 @@ class Contact extends Component {
 														<i className="mdi mdi-comment-text-outline ml-3 icons"></i>
 														<textarea
 															name="message"
-															id="message"
+															value={message}
+															onChange={
+																this
+																	.handleChange
+															}
 															rows="4"
 															className="form-control pl-5"
 														></textarea>
@@ -159,7 +189,6 @@ class Contact extends Component {
 												>
 													<button
 														type="submit"
-														id="submit"
 														className="submitBtn btn btn-primary btn-block"
 													>
 														Send Message
@@ -199,7 +228,7 @@ class Contact extends Component {
 								>
 									<div className="contact-detail text-center">
 										<div className="icon">
-											<img src={email} alt="" />
+											<img src={mail} alt="" />
 										</div>
 										<div className="content mt-3 link">
 											<h4 className="title font-weight-bold">
