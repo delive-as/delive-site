@@ -79,10 +79,8 @@ class Contact extends Component {
 											Contact details send successfully.
 										</Alert>
 										<form
-											action="POST"
-											method="POST"
 											onSubmit={this.handleSubmit}
-											name="contact-form"
+											name="contact"
 											id="contact-form"
 											data-netlify="true"
 										>
@@ -159,24 +157,14 @@ class Contact extends Component {
 													sm={12}
 													className="text-center"
 												>
-													<input
+													<button
 														type="submit"
 														id="submit"
-														name="send"
-														className="submitBnt btn btn-primary btn-block"
-														value="Send Message"
-													/>
+														className="submitBtn btn btn-primary btn-block"
+													>
+														Send Message
+													</button>
 													<div id="simple-msg"></div>
-												</Col>
-											</Row>
-											<Row>
-												<Col
-													sm={12}
-													className="text-center"
-												>
-													<div className="field">
-														<div data-netlify-recaptcha="true"></div>
-													</div>
 												</Col>
 											</Row>
 										</form>
