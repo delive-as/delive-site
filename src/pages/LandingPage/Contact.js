@@ -20,7 +20,9 @@ class Contact extends Component {
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
-	onFormSubmit() {
+	handleSubmit = e => {
+		e.preventDefault();
+		this.setState({ Contactvisible: true });
 		const { name, email, subject, message } = this.state;
 		axios({
 			method: "post",
@@ -36,12 +38,6 @@ class Contact extends Component {
 				text: message
 			}
 		});
-	}
-
-	handleSubmit = e => {
-		e.preventDefault();
-		this.setState({ Contactvisible: true });
-		this.onFormSubmit();
 	};
 
 	handleChange = e => this.setState({ [e.target.name]: e.target.value });
