@@ -79,11 +79,12 @@ class Contact extends Component {
 											Contact details send successfully.
 										</Alert>
 										<form
-											method="post"
+											action="POST"
+											method="POST"
 											onSubmit={this.handleSubmit}
 											name="contact-form"
 											id="contact-form"
-											netlify
+											data-netlify="true"
 										>
 											<Row>
 												<Col md={12}>
@@ -132,9 +133,9 @@ class Contact extends Component {
 														</label>
 														<i className="mdi mdi-email ml-3 icons"></i>
 														<input
-															name="email"
-															id="email"
-															type="email"
+															name="subject"
+															id="subject"
+															type="text"
 															className="form-control pl-5"
 															required
 														/>
@@ -145,8 +146,8 @@ class Contact extends Component {
 														<label>Message</label>
 														<i className="mdi mdi-comment-text-outline ml-3 icons"></i>
 														<textarea
-															name="comments"
-															id="comments"
+															name="message"
+															id="message"
 															rows="4"
 															className="form-control pl-5"
 														></textarea>
@@ -166,6 +167,16 @@ class Contact extends Component {
 														value="Send Message"
 													/>
 													<div id="simple-msg"></div>
+												</Col>
+											</Row>
+											<Row>
+												<Col
+													sm={12}
+													className="text-center"
+												>
+													<div className="field">
+														<div data-netlify-recaptcha="true"></div>
+													</div>
 												</Col>
 											</Row>
 										</form>
