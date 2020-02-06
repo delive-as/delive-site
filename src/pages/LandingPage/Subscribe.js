@@ -18,7 +18,7 @@ class Subscribe extends Component {
 							params={{
 								particles: {
 									number: {
-										value: 50,
+										value: 20,
 										density: {
 											enable: false
 										}
@@ -62,7 +62,7 @@ class Subscribe extends Component {
 									move: {
 										enable: true,
 										speed: 5,
-										direction: "top-left",
+										direction: "bottom-right",
 										random: false,
 										straight: true,
 										out_mode: "out"
