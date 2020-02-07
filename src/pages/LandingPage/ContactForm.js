@@ -2,23 +2,41 @@ import React, { Component } from "react";
 import { Row, Col, Alert } from "reactstrap";
 
 class ContactForm extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			name: "",
-			email: "",
-			subject: "",
-			message: "",
-			formSubmitted: false,
-			contactVisible: false
-		};
+	state = {
+		name: "",
+		email: "",
+		subject: "",
+		message: "",
+		formSubmitted: false,
+		contactVisible: false
+	};
+
+	handleName = this.handleName.bind(this);
+	handleEmail = this.handleEmail.bind(this);
+	handleSubject = this.handleSubject.bind(this);
+	handleMessage = this.handleMessage.bind(this);
+	handleSubmit = this.handleSubmit.bind(this);
+
+	handleName(event) {
+		this.setState({
+			name: event.target.value
+		});
 	}
 
-	handleChange(event) {
+	handleEmail(event) {
 		this.setState({
-			name: event.target.value,
-			email: event.target.value,
-			subject: event.target.value,
+			email: event.target.value
+		});
+	}
+
+	handleSubject(event) {
+		this.setState({
+			subject: event.target.value
+		});
+	}
+
+	handleMessage(event) {
+		this.setState({
 			message: event.target.value
 		});
 	}
@@ -94,7 +112,7 @@ class ContactForm extends Component {
 								<input
 									name="name"
 									value={this.state.name}
-									onChange={this.handleChange}
+									onChange={this.handleName}
 									type="text"
 									className="form-control pl-5"
 									required
@@ -110,7 +128,7 @@ class ContactForm extends Component {
 								<input
 									name="email"
 									value={this.state.email}
-									onChange={this.handleChange}
+									onChange={this.handleEmail}
 									type="email"
 									className="form-control pl-5"
 									required
@@ -127,7 +145,7 @@ class ContactForm extends Component {
 								<input
 									name="subject"
 									value={this.state.subject}
-									onChange={this.handleChange}
+									onChange={this.handleSubject}
 									type="text"
 									className="form-control pl-5"
 									required
@@ -144,7 +162,7 @@ class ContactForm extends Component {
 								<textarea
 									name="message"
 									value={this.state.message}
-									onChange={this.handleChange}
+									onChange={this.handleMessage}
 									rows="4"
 									className="form-control pl-5"
 								></textarea>
