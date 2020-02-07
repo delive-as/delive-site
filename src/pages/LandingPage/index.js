@@ -72,7 +72,7 @@ class Index extends Component {
 									number: {
 										value: 50,
 										density: {
-											enable: false
+											enable: true
 										}
 									},
 									color: {
@@ -124,7 +124,7 @@ class Index extends Component {
 									events: {
 										onhover: {
 											enable: true,
-											mode: "grab"
+											mode: "repulse"
 										},
 										onclick: {
 											enable: true,
