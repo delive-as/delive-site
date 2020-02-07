@@ -1,6 +1,6 @@
 // React Basic and Bootstrap
 import React, { Component } from "react";
-import { Row, Col } from "reactstrap";
+import { Row, Col, Alert } from "reactstrap";
 import SubscribeForm from "./SubscribeForm";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Particles from "react-particles-js";
@@ -124,13 +124,34 @@ class Subscribe extends Component {
 										status,
 										message
 									}) => (
-										<SubscribeForm
-											status={status}
-											message={message}
-											onValidated={formData =>
-												subscribe(formData)
-											}
-										/>
+										<div>
+											<SubscribeForm
+												status={status}
+												message={message}
+												onValidated={formData =>
+													subscribe(formData)
+												}
+											/>
+											{status === "error" && (
+												<div>
+													<div id="message"></div>
+													<Alert color="primary">
+														Something wrong
+														happened, please try
+														again.
+													</Alert>
+												</div>
+											)}
+											{status === "success" && (
+												<div>
+													<div id="message"></div>
+													<Alert color="info">
+														You are now subscribed,
+														thank you!
+													</Alert>
+												</div>
+											)}
+										</div>
 									)}
 								/>
 							</Col>
