@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import { Row, Col, Alert } from "reactstrap";
 import PropTypes from "prop-types";
 
-const user = process.env.REACT_APP_EMAILJS_USERID;
-const templateId = process.env.REACT_APP_EMAILJS_TEMPLATEID;
+const userID = process.env.REACT_APP_EMAILJS_USERID;
+const serviceID = process.env.REACT_APP_EMAILJS_SERVICEID;
+const templateID = process.env.REACT_APP_EMAILJS_TEMPLATEID;
 
 class ContactForm extends Component {
 	state = {
@@ -49,12 +50,13 @@ class ContactForm extends Component {
 		event.preventDefault();
 
 		this.sendFeedback(
-			templateId,
+			serviceID,
+			templateID,
 			this.state.name,
 			this.props.email,
 			this.state.subject,
 			this.state.message,
-			user
+			userID
 		);
 
 		this.setState({
@@ -63,18 +65,18 @@ class ContactForm extends Component {
 		});
 	}
 
-	sendFeedback(templateId, name, email, subject, message, user) {
+	sendFeedback(serviceID, templateID, name, email, subject, message, userID) {
 		window.emailjs
 			.send(
-				"default_service", // default email provider in your EmailJS account
-				templateId,
+				serviceID,
+				templateID,
 				{
 					name,
 					email,
 					subject,
 					message
 				},
-				user
+				userID
 			)
 			.then(res => {
 				this.setState({ formEmailSent: true });
