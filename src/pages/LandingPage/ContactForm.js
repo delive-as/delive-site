@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import { Row, Col, Alert } from "reactstrap";
+import PropTypes from "prop-types";
+
+const user = process.env.REACT_APP_EMAILJS_USERID;
+const template = process.env.REACT_APP_EMAILJS_TEMPLATEID;
 
 class ContactForm extends Component {
 	state = {
@@ -43,11 +47,6 @@ class ContactForm extends Component {
 
 	handleSubmit(event) {
 		event.preventDefault();
-
-		const {
-			REACT_APP_EMAILJS_TEMPLATEID: template,
-			REACT_APP_EMAILJS_USERID: user
-		} = this.props.env;
 
 		this.sendFeedback(
 			template,
@@ -175,6 +174,7 @@ class ContactForm extends Component {
 								type="submit"
 								value="Submit"
 								className="submitBtn btn btn-primary btn-block"
+								onClick={this.handleSubmit}
 							>
 								Send Message
 							</button>
@@ -186,5 +186,9 @@ class ContactForm extends Component {
 		);
 	}
 }
+
+ContactForm.propTypes = {
+	env: PropTypes.object.isRequired
+};
 
 export default ContactForm;
