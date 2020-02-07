@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Alert } from "reactstrap";
+import React from "react";
 
 const SubscribeForm = ({ status, message, onValidated }) => {
 	let email;
