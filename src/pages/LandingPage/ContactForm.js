@@ -3,9 +3,9 @@ import { Row, Col, Alert } from "reactstrap";
 
 import emailjs from "emailjs-com";
 
-const userID = process.env.REACT_APP_EMAILJS_USERID;
-const serviceID = process.env.REACT_APP_EMAILJS_SERVICEID;
-const templateID = process.env.REACT_APP_EMAILJS_TEMPLATEID;
+const userID = "user_i7x8e38tUYu1k5muOLfeh";
+const serviceID = "delive";
+const templateID = "delive_contact";
 
 class ContactForm extends Component {
 	state = {
