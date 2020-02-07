@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 
 // Layout Components
-import Navigation from "./Navigation";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 // Scroll up button
@@ -24,7 +24,7 @@ class Layout extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<Navigation />
+				<Navbar />
 				{this.props.children}
 				<Footer />
 				<div id="bottomIcon">

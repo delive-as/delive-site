@@ -15,7 +15,6 @@ import "./css/materialdesignicons.min.css";
 import routes from "./routes";
 
 function withLayout(WrappedComponent) {
-	// ...and returns another component...
 	return class extends React.Component {
 		render() {
 			return (

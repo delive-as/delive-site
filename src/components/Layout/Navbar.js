@@ -4,7 +4,7 @@ import { withRouter } from "react-router";
 
 import logo from "../../images/logo.png";
 
-class Topbar extends Component {
+class Navbar extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -29,7 +29,7 @@ class Topbar extends Component {
 	componentDidMount() {
 		var matchingMenuItem = null;
 		var ul = document.getElementById("top-menu");
-		var items = ul.getElementsByTagName("a");
+		var items = ul.getElementsByTagName("li");
 		for (var i = 0; i < items.length; ++i) {
 			if (this.props.location.pathname === items[i].pathname) {
 				matchingMenuItem = items[i];
@@ -44,18 +44,18 @@ class Topbar extends Component {
 	activateParentDropdown = item => {
 		const parent = item.parentElement;
 		if (parent) {
-			parent.classList.add("active"); // li
+			parent.classList.add("active");
 			const parent1 = parent.parentElement;
-			parent1.classList.add("active"); // li
+			parent1.classList.add("active");
 			if (parent1) {
 				const parent2 = parent1.parentElement;
-				parent2.classList.add("active"); // li
+				parent2.classList.add("active");
 				if (parent2) {
 					const parent3 = parent2.parentElement;
-					parent3.classList.add("active"); // li
+					parent3.classList.add("active");
 					if (parent3) {
 						const parent4 = parent3.parentElement;
-						parent4.classList.add("active"); // li
+						parent4.classList.add("active");
 					}
 				}
 			}
@@ -136,4 +136,4 @@ class Topbar extends Component {
 	}
 }
 
-export default withRouter(Topbar);
+export default withRouter(Navbar);
