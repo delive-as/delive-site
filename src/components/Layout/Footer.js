@@ -60,7 +60,7 @@ class Footer extends Component {
 							<div className="col-sm-6">
 								<div className="text-sm-right">
 									<p className="mb-0">
-										© {new Date().getFullYear()} DeLive
+										&copy; {new Date().getFullYear()} DeLive
 										Aerial System, LLC. All rights reserved.
 									</p>
 								</div>
