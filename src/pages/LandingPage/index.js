@@ -1,4 +1,3 @@
-// React Basic and Bootstrap
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Row, Col } from "reactstrap";
@@ -6,22 +5,18 @@ import Particles from "react-particles-js";
 
 import droneStandby from "../../images/drone/droneStandby.png";
 
-// Import Generic components
 import Partner from "./Partner";
 import Purpose from "./Purpose";
 import Solution from "./Solution";
-// import Trial from "./Trial";
 import Action from "./Action";
 import Team from "./Team";
 import Latest from "./Latest";
 import Contact from "./Contact";
 import Subscribe from "./Subscribe";
 
-// Import Css
 import "./animate.css";
 import "./animations-delay.css";
 
-// Modal Video
 import ModalVideo from "react-modal-video";
 import "../../../node_modules/react-modal-video/scss/modal-video.scss";
 

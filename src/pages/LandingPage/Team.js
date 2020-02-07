@@ -1,8 +1,6 @@
-// React Basic and Bootstrap
 import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 
-// import images
 import team1 from "../../images/team/rianMcDonnell.jpg";
 import team2 from "../../images/team/mattAdams.jpg";
 import team3 from "../../images/team/jioBuenviaje.jpg";

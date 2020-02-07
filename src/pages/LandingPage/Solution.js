@@ -1,13 +1,10 @@
-// React Basic and Bootstrap
 import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 import { HashLink as Link } from "react-router-hash-link";
 
-// Modal Video
 import ModalVideo from "react-modal-video";
 import "../../../node_modules/react-modal-video/scss/modal-video.scss";
 
-// import images
 import droneFlight from "../../images/drone/droneFlight.png";
 
 class Solution extends Component {

@@ -1,8 +1,6 @@
-// React Basic and Bootstrap
 import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 
-//import images
 import survivalRates from "../../images/survivalRates.png";
 
 class Purpose extends Component {

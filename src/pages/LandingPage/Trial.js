@@ -1,4 +1,3 @@
-// React Basic and Bootstrap
 import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 

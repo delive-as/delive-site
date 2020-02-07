@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 
-// Import Images
 import client1 from "../../images/partner/albersGroup.png";
 import client2 from "../../images/partner/ideaCenter.png";
 import client3 from "../../images/partner/ndEsteem.png";

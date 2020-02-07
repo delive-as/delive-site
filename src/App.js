@@ -7,11 +7,9 @@ import {
 	withRouter
 } from "react-router-dom";
 
-// Import Css
 import "./Apps.scss";
 import "./css/materialdesignicons.min.css";
 
-// Include Routes
 import routes from "./routes";
 
 function withLayout(WrappedComponent) {
