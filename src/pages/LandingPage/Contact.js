@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 
-import ContactForm from "./ContactForm.js";
+import ContactForm from "../../components/Forms/ContactForm.js";
 
 import phone from "../../images/icon/phone.svg";
 import mail from "../../images/icon/email.svg";

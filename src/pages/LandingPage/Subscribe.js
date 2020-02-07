@@ -1,7 +1,7 @@
 // React Basic and Bootstrap
 import React, { Component } from "react";
 import { Row, Col, Alert } from "reactstrap";
-import SubscribeForm from "./SubscribeForm";
+import SubscribeForm from "../../components/Forms/SubscribeForm.js";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Particles from "react-particles-js";
 
