@@ -5,8 +5,7 @@ import SubscribeForm from "./SubscribeForm";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Particles from "react-particles-js";
 
-const url =
-	"https://DeLiveDrones.us4.list-manage.com/subscribe/post?u=348297cf2d50a2fd0e83fd12b&amp;id=ab27abf3a8";
+const url = process.env.REACT_APP_MAILCHIMP_URL;
 
 class Subscribe extends Component {
 	render() {

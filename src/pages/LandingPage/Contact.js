@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
-import PropTypes from "prop-types";
 
 import ContactForm from "./ContactForm.js";
 
@@ -130,9 +129,5 @@ class Contact extends Component {
 		);
 	}
 }
-
-Contact.propTypes = {
-	env: PropTypes.object.isRequired
-};
 
 export default Contact;

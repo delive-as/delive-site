@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import { Alert } from "reactstrap";
 
 const SubscribeForm = ({ status, message, onValidated }) => {
+	const [state, setState] = useState(false);
 	let email;
+
 	const submit = () =>
 		email &&
 		email.value.indexOf("@") > -1 &&
 		onValidated({
 			EMAIL: email.value
 		});
+
+	function toggle() {
+		setState(!state);
+
+		setTimeout(() => {
+			setState(state);
+		}, 4000);
+	}
 
 	return (
 		<form>
@@ -24,15 +35,25 @@ const SubscribeForm = ({ status, message, onValidated }) => {
 					/>
 					<div className="input-group-append">
 						<button
-							className="btn btn-primary submitBnt"
+							className="toggle btn btn-primary submitBnt"
 							type="button"
 							id="newssubscribebtn"
-							onClick={submit}
+							onClick={(submit, toggle)}
 						>
 							Subscribe
 						</button>
 					</div>
 				</div>
+				{state ? (
+					<div>
+						<div id="message"></div>
+						<Alert color="info">
+							You are now subscribed, thank you!
+						</Alert>
+					</div>
+				) : (
+					<div></div>
+				)}
 			</div>
 		</form>
 	);

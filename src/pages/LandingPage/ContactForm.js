@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col, Alert } from "reactstrap";
-import PropTypes from "prop-types";
+
+import emailjs from "emailjs-com";
 
 const userID = process.env.REACT_APP_EMAILJS_USERID;
 const serviceID = process.env.REACT_APP_EMAILJS_SERVICEID;
@@ -53,7 +54,7 @@ class ContactForm extends Component {
 			serviceID,
 			templateID,
 			this.state.name,
-			this.props.email,
+			this.state.email,
 			this.state.subject,
 			this.state.message,
 			userID
@@ -66,7 +67,7 @@ class ContactForm extends Component {
 	}
 
 	sendFeedback(serviceID, templateID, name, email, subject, message, userID) {
-		window.emailjs
+		emailjs
 			.send(
 				serviceID,
 				templateID,
@@ -99,9 +100,14 @@ class ContactForm extends Component {
 						});
 					}}
 				>
-					Contact details send successfully.
+					Message received, thank you!
 				</Alert>
-				<form name="contact" method="post" onSubmit={this.handleSubmit}>
+				<form
+					className="contact-form"
+					name="contact-form"
+					method="post"
+					onSubmit={this.handleSubmit}
+				>
 					<input type="hidden" name="form-name" value="contact" />
 					<Row>
 						<Col md={12}>
@@ -174,7 +180,7 @@ class ContactForm extends Component {
 						<Col sm={12} className="text-center">
 							<button
 								type="submit"
-								value="Submit"
+								value="Send"
 								className="submitBtn btn btn-primary btn-block"
 							>
 								Send Message
@@ -187,9 +193,5 @@ class ContactForm extends Component {
 		);
 	}
 }
-
-ContactForm.propTypes = {
-	env: PropTypes.object.isRequired
-};
 
 export default ContactForm;
