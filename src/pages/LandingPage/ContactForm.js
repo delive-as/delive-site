@@ -176,7 +176,6 @@ class ContactForm extends Component {
 								type="submit"
 								value="Submit"
 								className="submitBtn btn btn-primary btn-block"
-								onClick={this.handleSubmit}
 							>
 								Send Message
 							</button>
