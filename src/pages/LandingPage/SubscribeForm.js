@@ -6,19 +6,12 @@ const SubscribeForm = ({ status, message, onValidated }) => {
 	let email;
 
 	const submit = () =>
+		setState(!state) &&
 		email &&
 		email.value.indexOf("@") > -1 &&
 		onValidated({
 			EMAIL: email.value
 		});
-
-	function toggle() {
-		setState(!state);
-
-		setTimeout(() => {
-			setState(state);
-		}, 4000);
-	}
 
 	return (
 		<form>
@@ -38,7 +31,7 @@ const SubscribeForm = ({ status, message, onValidated }) => {
 							className="toggle btn btn-primary submitBnt"
 							type="button"
 							id="newssubscribebtn"
-							onClick={(submit, toggle)}
+							onClick={submit}
 						>
 							Subscribe
 						</button>
