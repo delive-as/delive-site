@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { Alert } from "reactstrap";
 
 const SubscribeForm = ({ status, message, onValidated }) => {
-	const [state, setState] = useState(false);
 	let email;
 
 	const submit = () =>
-		setState(!state) &&
 		email &&
 		email.value.indexOf("@") > -1 &&
 		onValidated({
@@ -37,16 +35,6 @@ const SubscribeForm = ({ status, message, onValidated }) => {
 						</button>
 					</div>
 				</div>
-				{state ? (
-					<div>
-						<div id="message"></div>
-						<Alert color="info">
-							You are now subscribed, thank you!
-						</Alert>
-					</div>
-				) : (
-					<div></div>
-				)}
 			</div>
 		</form>
 	);
