@@ -1,49 +1,15 @@
-// React Basic and Bootstrap
 import React, { Component } from "react";
-import { Row, Col, Alert } from "reactstrap";
-import axios from "axios";
+import { Row, Col } from "reactstrap";
+import PropTypes from "prop-types";
+
+import ContactForm from "./ContactForm.js";
 
 import phone from "../../images/icon/phone.svg";
 import mail from "../../images/icon/email.svg";
 import location from "../../images/icon/location.svg";
 
 class Contact extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			name: "",
-			email: "",
-			subject: "",
-			message: "",
-			Contactvisible: false
-		};
-		this.handleSubmit = this.handleSubmit.bind(this);
-	}
-
-	handleSubmit = e => {
-		e.preventDefault();
-		this.setState({ Contactvisible: true });
-		const { name, email, subject, message } = this.state;
-		axios({
-			method: "post",
-			url: `https://api:key-someapikey@api.mailgun.net/v3/${process.env.REACT_APP_MAILGUN_DOMAIN}/messages`,
-			auth: {
-				username: "api",
-				password: process.env.REACT_APP_MAILGUN_API
-			},
-			params: {
-				from: `${name} <${email}>`,
-				to: "jio.buenviaje@gmail.com",
-				subject: subject,
-				text: message
-			}
-		});
-	};
-
-	handleChange = e => this.setState({ [e.target.name]: e.target.value });
-
 	render() {
-		const { name, email, subject, message } = this.state;
 		return (
 			<React.Fragment>
 				<section className="section">
@@ -87,130 +53,7 @@ class Contact extends Component {
 											contact@delivedrones.com
 										</a>
 									</h4>
-									<div className="custom-form mt-4">
-										<div id="message"></div>
-										<Alert
-											color="info"
-											isOpen={this.state.Contactvisible}
-											toggle={() => {
-												this.setState({
-													Contactvisible: !this.state
-														.Contactvisible
-												});
-											}}
-										>
-											Contact details send successfully.
-										</Alert>
-										<form
-											name="contact"
-											method="post"
-											onSubmit={this.handleSubmit}
-										>
-											<input
-												type="hidden"
-												name="form-name"
-												value="contact"
-											/>
-											<Row>
-												<Col md={12}>
-													<div className="form-group position-relative">
-														<label>
-															Name{" "}
-															<span className="text-danger">
-																*
-															</span>
-														</label>
-														<i className="mdi mdi-account ml-3 icons"></i>
-														<input
-															name="name"
-															value={name}
-															onChange={
-																this
-																	.handleChange
-															}
-															type="text"
-															className="form-control pl-5"
-															required
-														/>
-													</div>
-												</Col>
-												<Col md={12}>
-													<div className="form-group position-relative">
-														<label>
-															Email{" "}
-															<span className="text-danger">
-																*
-															</span>
-														</label>
-														<i className="mdi mdi-at ml-3 icons"></i>
-														<input
-															name="email"
-															value={email}
-															onChange={
-																this
-																	.handleChange
-															}
-															type="email"
-															className="form-control pl-5"
-															required
-														/>
-													</div>
-												</Col>
-												<Col md={12}>
-													<div className="form-group position-relative">
-														<label>
-															Subject{" "}
-															<span className="text-danger">
-																*
-															</span>
-														</label>
-														<i className="mdi mdi-email ml-3 icons"></i>
-														<input
-															name="subject"
-															value={subject}
-															onChange={
-																this
-																	.handleChange
-															}
-															type="text"
-															className="form-control pl-5"
-															required
-														/>
-													</div>
-												</Col>
-												<Col md={12}>
-													<div className="form-group position-relative">
-														<label>Message</label>
-														<i className="mdi mdi-comment-text-outline ml-3 icons"></i>
-														<textarea
-															name="message"
-															value={message}
-															onChange={
-																this
-																	.handleChange
-															}
-															rows="4"
-															className="form-control pl-5"
-														></textarea>
-													</div>
-												</Col>
-											</Row>
-											<Row>
-												<Col
-													sm={12}
-													className="text-center"
-												>
-													<button
-														type="submit"
-														className="submitBtn btn btn-primary btn-block"
-													>
-														Send Message
-													</button>
-													<div id="simple-msg"></div>
-												</Col>
-											</Row>
-										</form>
-									</div>
+									<ContactForm env={this.props.env} />
 								</div>
 							</Col>
 						</Row>
@@ -287,5 +130,9 @@ class Contact extends Component {
 		);
 	}
 }
+
+Contact.propTypes = {
+	env: PropTypes.object.isRequired
+};
 
 export default Contact;
