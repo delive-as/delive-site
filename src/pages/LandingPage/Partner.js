@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 
-import client1 from "../../images/partner/albersGroup.png";
-import client2 from "../../images/partner/ideaCenter.png";
-import client3 from "../../images/partner/ndEsteem.png";
+import albersGroup from "../../images/partner/albersGroup.png";
+import ideaCenter from "../../images/partner/ideaCenter.png";
+import ndEsteem from "../../images/partner/ndEsteem.png";
 
 class Partner extends Component {
 	constructor(props) {
@@ -24,7 +24,11 @@ class Partner extends Component {
 							>
 								<div className="greyed">
 									<a href="http://thealbersgroup.com/">
-										<img src={client1} height="70" alt="" />
+										<img
+											src={albersGroup}
+											height="70"
+											alt=""
+										/>
 									</a>
 								</div>
 							</Col>
@@ -32,7 +36,11 @@ class Partner extends Component {
 							<Col lg={4} md={4} className="col-6 text-center">
 								<div className="greyed">
 									<a href="https://ideacenter.nd.edu/">
-										<img src={client2} height="70" alt="" />
+										<img
+											src={ideaCenter}
+											height="70"
+											alt=""
+										/>
 									</a>
 								</div>
 							</Col>
@@ -44,7 +52,11 @@ class Partner extends Component {
 							>
 								<div className="greyed">
 									<a href="https://esteem.nd.edu/">
-										<img src={client3} height="70" alt="" />
+										<img
+											src={ndEsteem}
+											height="70"
+											alt=""
+										/>
 									</a>
 								</div>
 							</Col>

@@ -1,9 +1,9 @@
-// React Basic and Bootstrap
 import React, { Component } from "react";
 import { Row, Col, Alert } from "reactstrap";
-import SubscribeForm from "../../components/Forms/SubscribeForm.js";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import Particles from "react-particles-js";
+
+import SubscribeForm from "../../components/Forms/SubscribeForm.js";
 
 const url =
 	"https://DeLiveDrones.us4.list-manage.com/subscribe/post?u=348297cf2d50a2fd0e83fd12b&amp;id=ab27abf3a8";

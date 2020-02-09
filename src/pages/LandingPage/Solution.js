@@ -11,32 +11,14 @@ class Solution extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			autoplay: true,
 			isOpen: false
 		};
 		this.openModal = this.openModal.bind(this);
 	}
+
 	openModal() {
 		this.setState({ isOpen: true });
 	}
-	slideNext = () => {
-		this.slider.slideNext();
-	};
-	slidePrev = () => {
-		this.slider.slidePrev();
-	};
-	goToSlide = () => {
-		this.slider.goToSlide(4);
-	};
-	autoplay = () => {
-		this.setState({ autoplay: !this.state.autoplay });
-	};
-	_changeIcon = () => {
-		let { leftIcon, rightIcon } = this.state;
-		leftIcon = leftIcon ? undefined : <span className="fa fa-glass" />;
-		rightIcon = rightIcon ? undefined : <span className="fa fa-music" />;
-		this.setState({ leftIcon, rightIcon });
-	};
 
 	render() {
 		return (
@@ -56,7 +38,7 @@ class Solution extends Component {
 						<ModalVideo
 							channel="youtube"
 							isOpen={this.state.isOpen}
-							videoId="L61p2uyiMSo"
+							videoId="EJ-QtB2iPVU"
 							onClose={() => this.setState({ isOpen: false })}
 						/>
 						<Row className="align-items-center">

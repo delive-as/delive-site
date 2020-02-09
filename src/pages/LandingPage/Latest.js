@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 
-import blog1 from "../../images/latest/ces1.jpg";
-import blog2 from "../../images/latest/ces2.jpg";
-import blog3 from "../../images/latest/ces3.jpg";
+import blogCes1 from "../../images/latest/ces1.jpg";
+import blogCes2 from "../../images/latest/ces2.jpg";
+import blogCes3 from "../../images/latest/ces3.jpg";
 
 class Latest extends Component {
 	render() {
@@ -26,7 +26,7 @@ class Latest extends Component {
 								<div className="blog position-relative overflow-hidden shadow rounded">
 									<div className="position-relative">
 										<img
-											src={blog3}
+											src={blogCes1}
 											className="img-fluid rounded-top"
 											alt=""
 										/>
@@ -76,7 +76,7 @@ class Latest extends Component {
 								<div className="blog position-relative overflow-hidden shadow rounded">
 									<div className="position-relative">
 										<img
-											src={blog2}
+											src={blogCes2}
 											className="img-fluid rounded-top"
 											alt=""
 										/>
@@ -126,7 +126,7 @@ class Latest extends Component {
 								<div className="blog position-relative overflow-hidden shadow rounded">
 									<div className="position-relative">
 										<img
-											src={blog1}
+											src={blogCes3}
 											className="img-fluid rounded-top"
 											alt=""
 										/>

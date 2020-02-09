@@ -7,11 +7,11 @@ import key2 from "../../images/status/key2.png";
 import key3 from "../../images/status/key3.png";
 import key4 from "../../images/status/key4.png";
 
-import population from "../../images/icon/population.svg";
-import cardiac from "../../images/icon/cardiac.svg";
-import lives from "../../images/icon/lives.svg";
+import populationIcon from "../../images/icon/population.svg";
+import cardiacIcon from "../../images/icon/cardiac.svg";
+import livesIcon from "../../images/icon/lives.svg";
 
-class Status extends Component {
+class Trial extends Component {
 	render() {
 		return (
 			<React.Fragment>
@@ -64,7 +64,7 @@ class Status extends Component {
 												<div className="content">
 													<div className="icon">
 														<img
-															src={population}
+															src={populationIcon}
 															alt=""
 														/>
 													</div>
@@ -87,7 +87,7 @@ class Status extends Component {
 												<div className="content">
 													<div className="icon">
 														<img
-															src={cardiac}
+															src={cardiacIcon}
 															alt=""
 														/>
 													</div>
@@ -112,7 +112,7 @@ class Status extends Component {
 												<div className="content">
 													<div className="icon">
 														<img
-															src={lives}
+															src={livesIcon}
 															alt=""
 														/>
 													</div>
@@ -192,4 +192,4 @@ class Status extends Component {
 	}
 }
 
-export default Status;
+export default Trial;

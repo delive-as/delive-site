@@ -3,9 +3,9 @@ import { Row, Col } from "reactstrap";
 
 import ContactForm from "../../components/Forms/ContactForm.js";
 
-import phone from "../../images/icon/phone.svg";
-import mail from "../../images/icon/email.svg";
-import location from "../../images/icon/location.svg";
+import phoneIcon from "../../images/icon/phone.svg";
+import mailIcon from "../../images/icon/email.svg";
+import locationIcon from "../../images/icon/location.svg";
 
 class Contact extends Component {
 	render() {
@@ -61,7 +61,7 @@ class Contact extends Component {
 								<Col md={4}>
 									<div className="contact-detail text-center">
 										<div className="icon">
-											<img src={phone} alt="" />
+											<img src={phoneIcon} alt="" />
 										</div>
 										<div className="content mt-3 link">
 											<h4 className="title font-weight-bold">
@@ -83,7 +83,7 @@ class Contact extends Component {
 								>
 									<div className="contact-detail text-center">
 										<div className="icon">
-											<img src={mail} alt="" />
+											<img src={mailIcon} alt="" />
 										</div>
 										<div className="content mt-3 link">
 											<h4 className="title font-weight-bold">
@@ -105,7 +105,7 @@ class Contact extends Component {
 								>
 									<div className="contact-detail text-center">
 										<div className="icon">
-											<img src={location} alt="" />
+											<img src={locationIcon} alt="" />
 										</div>
 										<div className="content mt-3 link">
 											<h4 className="title font-weight-bold">

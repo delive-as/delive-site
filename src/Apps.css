@@ -10562,35 +10562,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-/* Template Name: Landrick - Saas & Software Landing Page Template
-   Author: Shreethemes
-   E-mail: shreethemes@gmail.com
-   Version: 1.0.0
-   Created: August 2019
-   File Description: Main Css file of the template
-*/
-/*********************************/
-/*         INDEX                 */
-/*================================
- *     01.  Variables            *
- *     02.  Bootstrap Custom     *
- *     03.  Components           *
- *     04.  General              *
- *     05.  Helper               *
- *     06.  Menu                 *
- *     07.  Home / Landing       *
- *     08.  Features / Services  *
- *     09.  Testimonial          *
- *     10.  Price                *
- *     11.  C.T.A                *
- *     12.  Blog / Careers / Job *
- *     13.  Work / Projects      *
- *     14.  Team                 *
- *     15.  User Pages           *
- *     16.  Countdown            *
- *     17.  Contact              *
- *     18.  Footer               *
- ================================*/
 @font-face {
   font-family: BryantPro;
   src: url("../fonts/BryantPro-Medium.otf") format("opentype");
@@ -10705,7 +10676,8 @@ a.text-dark:hover, a.text-dark:focus {
   border-bottom-right-radius: 10px !important;
 }
 
-.small, small {
+.small,
+small {
   font-size: 90%;
 }
 
@@ -11324,7 +11296,7 @@ button:not(:disabled) {
   content: "\f142";
   font-size: 16px;
   color: #202943;
-  font-family: 'Material Design Icons';
+  font-family: "Material Design Icons";
 }
 
 .page-next-level .page-next li:last-child {
@@ -11335,7 +11307,8 @@ button:not(:disabled) {
   display: none;
 }
 
-.page-next-level .page-next li a, .page-next-level .page-next li span {
+.page-next-level .page-next li a,
+.page-next-level .page-next li span {
   font-size: 14px;
   padding-right: 8px;
   -webkit-transition: all 0.5s ease;
@@ -11386,9 +11359,9 @@ button:not(:disabled) {
 }
 
 .faq-content .card a.faq.text-primary:before {
-  content: '\F143';
+  content: "\F143";
   display: block;
-  font-family: 'Material Design Icons';
+  font-family: "Material Design Icons";
   font-size: 18px;
   color: #202943;
   position: absolute;
@@ -11408,9 +11381,9 @@ button:not(:disabled) {
 }
 
 .faq-content .card a.faq.text-dark:before {
-  content: '\F143';
+  content: "\F143";
   display: block;
-  font-family: 'Material Design Icons';
+  font-family: "Material Design Icons";
   font-size: 18px;
   color: #202943;
   position: absolute;
@@ -12741,7 +12714,8 @@ p {
           transform: scale(1.05);
 }
 
-.key-feature .content .title, .features .title {
+.key-feature .content .title,
+.features .title {
   font-size: 18px;
 }
 
@@ -12754,7 +12728,8 @@ p {
   font-size: 20px;
 }
 
-.work-process .step, .work-process .step-icon {
+.work-process .step,
+.work-process .step-icon {
   font-size: 45px;
   opacity: 0.06;
 }
@@ -12814,126 +12789,6 @@ p {
 @media screen and (max-width: 767px) {
   .course-feature {
     margin: 0 0 30px;
-  }
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  background: #d81935 !important;
-}
-
-.customer-testi {
-  cursor: e-resize;
-}
-
-.customer-testi .content:before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  margin-left: -3px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 8px solid #202943;
-  border-color: transparent #ffffff #ffffff transparent;
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  -webkit-box-shadow: 2px 2px 2px -1px rgba(32, 41, 67, 0.15);
-          box-shadow: 2px 2px 2px -1px rgba(32, 41, 67, 0.15);
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  border-radius: 2px;
-  background: transparent;
-  border: 2px solid #d81935;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots.clickable .owl-dot:hover span {
-  background: #d81935;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.owl-carousel .owl-item img {
-  display: block;
-  width: auto;
-}
-
-.slick-slider {
-  overflow-x: hidden !important;
-  cursor: pointer;
-}
-
-.pricing-rates {
-  position: relative;
-  z-index: 1;
-  border-bottom: 3px solid #adb5bd;
-}
-
-.pricing-rates .title {
-  font-weight: 700;
-  font-size: 16px;
-}
-
-.pricing-rates .feature .feature-list {
-  margin: auto auto 5px;
-  font-size: 14px;
-}
-
-.pricing-rates.business-rate {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.pricing-rates.business-rate:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-  z-index: 2;
-  border-color: #d81935;
-}
-
-.pricing-rates.business-rate:hover .title {
-  color: #d81935;
-}
-
-.pricing-rates.starter-plan {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  z-index: 2;
-  border-color: #d81935;
-}
-
-.pricing-rates.best-plan {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.pricing-rates.best-plan .lable {
-  width: 200px;
-  position: absolute;
-  top: 15px;
-  right: -65px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  z-index: 1;
-}
-
-.pricing-rates.best-plan .lable h6 {
-  font-size: 12px;
-}
-
-.pricing-rates.best-plan:hover {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-
-@media (max-width: 767px) {
-  .pricing-rates.starter-plan {
-    -webkit-transform: scale(1);
-            transform: scale(1);
   }
 }
 
@@ -13279,214 +13134,6 @@ p {
           transform: translateY(-5px);
 }
 
-.work-container {
-  overflow: hidden;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.work-container .overlay-work {
-  border-radius: 10px;
-}
-
-.work-container .content {
-  position: absolute;
-  z-index: 1;
-  bottom: 5%;
-  left: 5%;
-}
-
-.work-container .content .title {
-  font-size: 20px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.work-container .content .title:hover {
-  color: #f6aeb8 !important;
-}
-
-.work-container .client, .work-container .read_more {
-  position: absolute;
-  z-index: 1;
-  right: 5%;
-  top: 5%;
-}
-
-.work-container .read_more {
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-}
-
-.work-container:hover .personal-port {
-  opacity: 1;
-}
-
-.work-details ul li b {
-  max-width: 90px;
-  width: 100%;
-  display: inline-block;
-}
-
-.work-container img, .courses-desc img {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.work-container .overlay-work, .courses-desc .overlay-work {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background-color: #202943;
-  z-index: 1;
-}
-
-.work-container:hover img, .courses-desc:hover img {
-  -webkit-transform: scale(1.1) rotate(3deg);
-          transform: scale(1.1) rotate(3deg);
-}
-
-.work-container:hover .overlay-work, .courses-desc:hover .overlay-work {
-  opacity: 0.6;
-}
-
-.event-schedule {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.event-schedule .date .day {
-  font-size: 18px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  background: #fad7dc;
-  line-height: 48px;
-  border: 2px solid #ffffff;
-  -webkit-box-shadow: 0px 0px 2px 0.25px #e62541;
-          box-shadow: 0px 0px 2px 0.25px #e62541;
-}
-
-.event-schedule .date .month {
-  font-size: 13px;
-}
-
-.event-schedule .content .title {
-  font-size: 20px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.event-schedule .content .title:hover {
-  color: #d81935 !important;
-}
-
-.event-schedule .content .location-time {
-  font-size: 14px;
-}
-
-.event-schedule:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-  border-color: #d81935 !important;
-  background: #f8f9fc !important;
-}
-
-.courses-desc {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.courses-desc .overlay-work {
-  border-radius: 10px 0;
-}
-
-.courses-desc .content .title {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.courses-desc .content .title:hover {
-  color: #d81935 !important;
-}
-
-.courses-desc .collection, .courses-desc .preview {
-  position: absolute;
-  opacity: 0;
-  z-index: 1;
-}
-
-.courses-desc .collection {
-  top: 15px;
-  left: 15px;
-}
-
-.courses-desc .collection i {
-  -webkit-text-stroke: 2px #e43f52;
-  -webkit-text-fill-color: transparent;
-}
-
-.courses-desc .collection i:active {
-  -webkit-text-stroke: 0px #e43f52;
-  -webkit-text-fill-color: #e43f52;
-}
-
-.courses-desc .preview {
-  bottom: 15px;
-  right: 15px;
-}
-
-.courses-desc .preview:hover {
-  color: #f6aeb8 !important;
-}
-
-.courses-desc:hover {
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-
-.courses-desc:hover .collection, .courses-desc:hover .preview {
-  opacity: 1;
-}
-
-.personal-port {
-  opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.container-filter li a {
-  font-size: 13px;
-  padding: 0px 15px;
-  margin: 5px 3px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  cursor: pointer;
-  line-height: 34px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.container-filter li a.active, .container-filter li a:hover {
-  color: #d81935 !important;
-  border-color: #d81935 !important;
-}
-
-.spacing {
-  padding-left: 7px;
-  padding-right: 7px;
-}
-
 .team img {
   height: 200px;
   -webkit-transition: all 0.5s ease;
@@ -13522,139 +13169,6 @@ p {
 
 .team:hover .team-icon {
   opacity: 1;
-}
-
-.login-page {
-  font-size: 15px;
-}
-
-.login-page .forgot-pass {
-  z-index: 99;
-  position: relative;
-  font-size: 13px;
-}
-
-.cover-user .container-fluid {
-  max-width: 100%;
-}
-
-.cover-user .container-fluid .padding-less.img {
-  background: scroll center no-repeat;
-  background-size: cover;
-  position: absolute;
-  height: 100%;
-}
-
-.cover-user .cover-user-img {
-  height: 100vh;
-}
-
-@media (min-width: 1025px) {
-  .cover-user .cover-user-img {
-    padding: 0px 20%;
-  }
-}
-
-@media (max-width: 768px) {
-  .cover-user .padding-less {
-    position: relative !important;
-    height: 400px !important;
-  }
-  .cover-user .cover-user-content {
-    text-align: left !important;
-  }
-  .cover-user .cover-user-img {
-    -webkit-box-align: start !important;
-        -ms-flex-align: start !important;
-            align-items: start !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .cover-user .cover-user-img {
-    height: auto !important;
-  }
-  .cover-user .cover-my-30 {
-    margin: 30px 0;
-  }
-}
-
-.coming-soon, .maintenance, .error-page {
-  font-size: 40px;
-  letter-spacing: 1px;
-}
-
-#countdown .count-down, #eventdown .count-down {
-  display: inline-block;
-  margin: 30px 10px;
-  color: #ffffff;
-  border-radius: 50%;
-  text-align: center;
-  border: 4px solid #dee2e6;
-  height: 130px;
-  width: 130px;
-}
-
-#countdown .count-down .count-number, #eventdown .count-down .count-number {
-  font-size: 40px;
-  line-height: 95px;
-}
-
-#countdown .count-down .count-head, #eventdown .count-down .count-head {
-  display: block;
-  position: relative;
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-
-#eventdown .count-down {
-  margin: 10px !important;
-  border: 0;
-  height: 20px;
-  width: 80px;
-}
-
-#eventdown .count-down .count-number {
-  line-height: 80px;
-}
-
-#eventdown .count-down .count-head {
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
-}
-
-#clock {
-  color: #ffffff;
-}
-
-#clock p {
-  width: 80px;
-}
-
-#clock p span {
-  font-size: 40px;
-}
-
-#clock p span.indicator {
-  font-size: 18px;
-}
-
-@media (min-width: 200px) and (max-width: 767px) {
-  .coming-soon, .maintenance, .error-page {
-    font-size: 32px;
-  }
-  #eventdown .count-down {
-    width: 60px;
-  }
-  #eventdown .count-down .count-number {
-    font-size: 30px;
-  }
-  #eventdown .count-down .count-head {
-    font-size: 10px;
-  }
 }
 
 .contact-detail .icon img {
@@ -13844,9 +13358,14 @@ a:hover {
   color: #8ea5b4 !important;
 }
 
-.greyed img:hover {
+.greyed img {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+.greyed img:hover {
+  -webkit-filter: none;
+          filter: none;
 }
 
 .back-to-top {

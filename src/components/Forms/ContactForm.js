@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Row, Col, Alert } from "reactstrap";
-
 import emailjs from "emailjs-com";
 
 const userID = "user_i7x8e38tUYu1k5muOLfeh";

@@ -1,39 +1,16 @@
 import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 
-import team1 from "../../images/team/rianMcDonnell.jpg";
-import team2 from "../../images/team/mattAdams.jpg";
-import team3 from "../../images/team/jioBuenviaje.jpg";
-import team4 from "../../images/team/zachSy.jpg";
-import team5 from "../../images/team/mattGardner.jpg";
-import team6 from "../../images/team/michaelWicks.jpg";
-import team7 from "../../images/team/nathanHanson.jpg";
-import team8 from "../../images/team/zachKousens.jpg";
+import rianMcDonnell from "../../images/team/rianMcDonnell.jpg";
+import mattAdams from "../../images/team/mattAdams.jpg";
+import jioBuenviaje from "../../images/team/jioBuenviaje.jpg";
+import zachSy from "../../images/team/zachSy.jpg";
+import mattGardner from "../../images/team/mattGardner.jpg";
+import michaelWicks from "../../images/team/michaelWicks.jpg";
+import nathanHanson from "../../images/team/nathanHanson.jpg";
+import zachKousens from "../../images/team/zachKousens.jpg";
 
 class Team extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {};
-	}
-
-	componentDidMount() {
-		window.addEventListener("scroll", this.scrollNavigation, true);
-	}
-	// Make sure to remove the DOM listener when the component is unmounted.
-	componentWillUnmount() {
-		window.removeEventListener("scroll", this.scrollNavigation);
-	}
-
-	scrollNavigation = () => {
-		var doc = document.documentElement;
-		var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
-		if (top > 80) {
-			document.getElementById("topnav").classList.add("nav-sticky");
-		} else {
-			document.getElementById("topnav").classList.remove("nav-sticky");
-		}
-	};
-
 	render() {
 		return (
 			<React.Fragment>
@@ -55,7 +32,7 @@ class Team extends Component {
 								<div className="team text-center">
 									<div className="position-relative">
 										<img
-											src={team1}
+											src={rianMcDonnell}
 											className="img-fluid d-block rounded-pill mx-auto shadow border"
 											alt=""
 										/>
@@ -114,7 +91,7 @@ class Team extends Component {
 								<div className="team text-center">
 									<div className="position-relative">
 										<img
-											src={team2}
+											src={mattAdams}
 											className="img-fluid d-block rounded-pill mx-auto shadow border"
 											alt=""
 										/>
@@ -155,7 +132,7 @@ class Team extends Component {
 								<div className="team text-center">
 									<div className="position-relative">
 										<img
-											src={team3}
+											src={jioBuenviaje}
 											className="img-fluid d-block rounded-pill mx-auto shadow border"
 											alt=""
 										/>
@@ -214,7 +191,7 @@ class Team extends Component {
 								<div className="team text-center">
 									<div className="position-relative">
 										<img
-											src={team4}
+											src={zachSy}
 											className="img-fluid d-block rounded-pill mx-auto shadow border"
 											alt=""
 										/>
@@ -274,7 +251,7 @@ class Team extends Component {
 								<div className="team text-center">
 									<div className="position-relative">
 										<img
-											src={team5}
+											src={mattGardner}
 											className="img-fluid d-block rounded-pill mx-auto shadow border"
 											alt=""
 										/>
@@ -315,7 +292,7 @@ class Team extends Component {
 								<div className="team text-center">
 									<div className="position-relative">
 										<img
-											src={team6}
+											src={michaelWicks}
 											className="img-fluid d-block rounded-pill mx-auto shadow border"
 											alt=""
 										/>
@@ -365,7 +342,7 @@ class Team extends Component {
 								<div className="team text-center">
 									<div className="position-relative">
 										<img
-											src={team7}
+											src={nathanHanson}
 											className="img-fluid d-block rounded-pill mx-auto shadow border"
 											alt=""
 										/>
@@ -415,7 +392,7 @@ class Team extends Component {
 								<div className="team text-center">
 									<div className="position-relative">
 										<img
-											src={team8}
+											src={zachKousens}
 											className="img-fluid d-block rounded-pill mx-auto shadow border"
 											alt=""
 										/>
@@ -458,4 +435,5 @@ class Team extends Component {
 		);
 	}
 }
+
 export default Team;

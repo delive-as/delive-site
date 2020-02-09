@@ -2,11 +2,10 @@ import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 import { HashLink as Link } from "react-router-hash-link";
 
-import bgPath from "../../images/bgPath.jpg";
-
-// Modal Video
 import ModalVideo from "react-modal-video";
 import "../../../node_modules/react-modal-video/scss/modal-video.scss";
+
+import bgPath from "../../images/bgPath.jpg";
 
 class Action extends Component {
 	constructor(props) {

@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import Layout from "./components/Layout/";
 import {
 	Route,
 	Switch,
 	BrowserRouter as Router,
 	withRouter
 } from "react-router-dom";
+
+import Layout from "./components/Layout/";
 
 import "./Apps.scss";
 import "./css/materialdesignicons.min.css";

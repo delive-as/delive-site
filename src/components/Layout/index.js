@@ -1,12 +1,9 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
+import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
 
-// Layout Components
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-
-// Scroll up button
-import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
 
 class Layout extends Component {
 	constructor(props) {
