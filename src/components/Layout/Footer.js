@@ -17,10 +17,7 @@ class Footer extends Component {
 							<div className="col-sm-6">
 								<div className="text-sm-left">
 									<span>
-										<Link
-											className="logo-footer mb-1"
-											to="/"
-										>
+										<Link className="logo-footer" to="/">
 											De
 											<span className="text-primary">
 												Live

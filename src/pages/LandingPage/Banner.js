@@ -112,7 +112,7 @@ class Banner extends Component {
 										className="text-center mt-0 mt-md-5 pt-0 pt-md-5"
 									>
 										<div className="title-heading margin-top-50">
-											<h1 className="display-4 font-weight-bold mb-3 text-secondary animated fadeInDownBig animation-delay-3">
+											<h1 className="display-1 font-weight-bold mb-3 text-secondary animated fadeInDownBig animation-delay-3">
 												De
 												<span className="text-primary">
 													Live

@@ -112,7 +112,7 @@ class Solution extends Component {
 									</ul>
 									<Link
 										to="#contact"
-										className="btn btn-primary mt-1"
+										className="btn btn-primary"
 									>
 										Get Started
 									</Link>

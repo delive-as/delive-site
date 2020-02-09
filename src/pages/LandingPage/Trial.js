@@ -142,7 +142,7 @@ class Trial extends Component {
 											/>
 										</Col>
 									</Row>
-									<p className="text-secondary para-desc mb-1 ml-2 ml-md-5">
+									<p className="text-secondary para-desc ml-2 ml-md-5">
 										<img
 											src={key1}
 											className="img-fluid rounded shadow ml-4 ml-lg-5"
@@ -152,7 +152,7 @@ class Trial extends Component {
 											Fort Wayne Fire Department
 										</span>
 									</p>
-									<p className="text-secondary para-desc mb-1 ml-2 ml-md-5">
+									<p className="text-secondary para-desc ml-2 ml-md-5">
 										<img
 											src={key2}
 											className="img-fluid rounded shadow ml-4 ml-lg-5"
@@ -162,7 +162,7 @@ class Trial extends Component {
 											Southwest Fire Department
 										</span>
 									</p>
-									<p className="text-secondary para-desc mb-1 ml-2 ml-md-5">
+									<p className="text-secondary para-desc ml-2 ml-md-5">
 										<img
 											src={key3}
 											className="img-fluid rounded shadow ml-4 ml-lg-5"
@@ -172,7 +172,7 @@ class Trial extends Component {
 											Three Rivers EMS
 										</span>
 									</p>
-									<p className="text-secondary para-desc mb-1 ml-2 ml-md-5">
+									<p className="text-secondary para-desc ml-2 ml-md-5">
 										<img
 											src={key4}
 											className="img-fluid rounded shadow ml-4 ml-lg-5"

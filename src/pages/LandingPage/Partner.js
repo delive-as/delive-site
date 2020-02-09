@@ -20,9 +20,9 @@ class Partner extends Component {
 							<Col
 								lg={4}
 								md={4}
-								className="col-6 text-center greyed"
+								className="col-6 text-center grayed"
 							>
-								<div className="greyed">
+								<div className="grayed">
 									<a href="http://thealbersgroup.com/">
 										<img
 											src={albersGroup}
@@ -34,7 +34,7 @@ class Partner extends Component {
 							</Col>
 
 							<Col lg={4} md={4} className="col-6 text-center">
-								<div className="greyed">
+								<div className="grayed">
 									<a href="https://ideacenter.nd.edu/">
 										<img
 											src={ideaCenter}
@@ -50,7 +50,7 @@ class Partner extends Component {
 								md={4}
 								className="col-6 text-center mt-4 mt-sm-0"
 							>
-								<div className="greyed">
+								<div className="grayed">
 									<a href="https://esteem.nd.edu/">
 										<img
 											src={ndEsteem}

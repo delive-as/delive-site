@@ -72,7 +72,7 @@ class Team extends Component {
 										<h5 className="mb-0">
 											<a
 												href="https://www.linkedin.com/in/rianmcdonnell/"
-												className="name text-dark"
+												className="team-name text-dark"
 											>
 												Rian Mc Donnell
 											</a>
@@ -113,7 +113,7 @@ class Team extends Component {
 										<h5 className="mb-0">
 											<a
 												href="https://www.linkedin.com/in/matt-a-adams-nd/"
-												className="name text-dark"
+												className="team-name text-dark"
 											>
 												Matthew Adams
 											</a>
@@ -172,7 +172,7 @@ class Team extends Component {
 										<h5 className="mb-0">
 											<a
 												href="https://www.linkedin.com/in/lockjio/"
-												className="name text-dark"
+												className="team-name text-dark"
 											>
 												Jio Buenviaje
 											</a>
@@ -231,7 +231,7 @@ class Team extends Component {
 										<h5 className="mb-0">
 											<a
 												href="https://www.linkedin.com/in/zacharysy/"
-												className="name text-dark"
+												className="team-name text-dark"
 											>
 												Zachary Sy
 											</a>
@@ -273,7 +273,7 @@ class Team extends Component {
 										<h5 className="mb-0">
 											<a
 												href="https://www.linkedin.com/in/matthewthomasgardner"
-												className="name text-dark"
+												className="team-name text-dark"
 											>
 												Matthew Gardner
 											</a>
@@ -323,7 +323,7 @@ class Team extends Component {
 										<h5 className="mb-0">
 											<a
 												href="https://www.linkedin.com/in/michael-wicks-5b348915"
-												className="name text-dark"
+												className="team-name text-dark"
 											>
 												Michael Wicks
 											</a>
@@ -373,7 +373,7 @@ class Team extends Component {
 										<h5 className="mb-0">
 											<a
 												href="https://www.linkedin.com/in/nathaniel-j-hanson"
-												className="name text-dark"
+												className="team-name text-dark"
 											>
 												Nathaniel Hanson
 											</a>
@@ -414,7 +414,7 @@ class Team extends Component {
 										<h5 className="mb-0">
 											<a
 												href="https://www.linkedin.com/in/zachary-kousens/"
-												className="name text-dark"
+												className="team-name text-dark"
 											>
 												Zachary Kousens
 											</a>
