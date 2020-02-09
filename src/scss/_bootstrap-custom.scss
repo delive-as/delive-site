@@ -1,7 +1,6 @@
-//
-// Bootstrap-custom.scss
-//
-
+/*================================================
+Custom Bootstrap CSS
+=================================================*/
 @each $name, $value in $colors {
 	.bg-#{$name} {
 		background-color: #{$value} !important;
@@ -11,12 +10,11 @@
 	}
 }
 
-//li (list inline item)
 .list-inline-item:not(:last-child) {
 	margin-right: 0px;
 	margin-bottom: 5px;
 }
-// Rounded
+
 .rounded {
 	border-radius: 10px !important;
 }
@@ -24,20 +22,7 @@
 	border-top-left-radius: 10px !important;
 	border-top-right-radius: 10px !important;
 }
-.rounded-left {
-	border-top-left-radius: 10px !important;
-	border-bottom-left-radius: 10px !important;
-}
-.rounded-bottom {
-	border-bottom-left-radius: 10px !important;
-	border-bottom-right-radius: 10px !important;
-}
-.rounded-right {
-	border-top-right-radius: 10px !important;
-	border-bottom-right-radius: 10px !important;
-}
 
-//Small
 .small,
 small {
 	font-size: 90%;

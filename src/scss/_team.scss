@@ -1,13 +1,12 @@
-//
-// team.scss
-//
-
+/*================================================
+Team CSS
+=================================================*/
 .team {
 	img {
 		height: 200px;
 		transition: all 0.5s ease;
 	}
-	.name {
+	.team-name {
 		&:hover {
 			color: $primary !important;
 		}
@@ -26,9 +25,6 @@
 		img {
 			box-shadow: $shadow;
 			opacity: 0.2;
-		}
-		.overlay-team {
-			opacity: 0.6;
 		}
 		.team-icon {
 			opacity: 1;

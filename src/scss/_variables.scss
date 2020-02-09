@@ -1,15 +1,16 @@
-//
-// variables.scss
-//
+/*================================================
+Variables CSS
+=================================================*/
 
+// Font Imports
 @font-face {
 	font-family: BryantPro;
 	src: url("../fonts/BryantPro-Medium.otf") format("opentype");
 }
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap");
-// Color
-$white: #ffffff;
 
+// Colors
+$white: #ffffff;
 $primary: #d81935;
 $secondary: #202943;
 $link: #8ea5b4;
@@ -30,18 +31,21 @@ $gray-400: #ced4da;
 $gray-500: #adb5bd;
 $gray-600: #6c757d;
 $gray-700: #495057;
+
 // Overlay
 $overlay: rgba(35, 37, 47, 0.7);
 $gradident-overlay: rgba(47, 86, 212, 0.75);
+
 // Body Background
 $body-color: #161c2d;
 $shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+
 // Base font
 $font-size-base: 16px;
-
 $font-family-base: "BryantPro", sans-serif;
 $font-family-secondary: "Nunito", sans-serif;
 
+// Assignment
 $colors: (
 	"primary": $primary,
 	"secondary": $secondary,
