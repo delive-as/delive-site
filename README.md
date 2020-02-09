@@ -12,11 +12,17 @@ Progressive Web Application (PWA) developed in React (CRA) for frontend and will
 - [x] Integrate Google Analytics API
 - [x] Integrate Mailchimp API
 - [x] Integrate Google Maps API
-- [x] Fix contact form (use EmailJS)
+- [x] Fix contact form (EmailJS)
 - [x] Fix site metadata
 - [x] Delete unused dependencies (depcheck/npm-check-unused)
 - [x] Delete unused assets (images, CSS)
 - [ ] Optimize to be PWA (metadata image)
 - [ ] Optimize images
+- [ ] Integrate with Django backend
+- [ ] Host in AWS (Elastic Beanstalk)
+- [ ] Create and integrate cloud-based database (DynamoDB)
+- [ ] Create signup/login portal
+- [ ] Add dynamic forms for sign/login portal (formik or react-hook-form)
+- [ ] Add authentication for signup/login portal (OAuth)
 
 ---
