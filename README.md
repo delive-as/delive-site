@@ -1,6 +1,6 @@
 # DeLive Drones Company Website :desktop_computer:
 
-Progressive Web Application (PWA) developed in React (CRA) for frontend and will be integrated with Django for backend. PWA uses Sass and Reactstrap (General Style), Google Maps (Map Location), Mailchimp (Subscription), EmailJS (Contact Form), and Google Analytics (Analytics). PWA is hosted on Netlify and will be moved to AWS.
+Progressive Web Application (PWA) developed in React (CRA) for frontend and will be integrated with Django for backend. PWA uses Sass/SCSS and Bootstrap (General Style), Google Maps (Map Location), Mailchimp (Subscription), EmailJS (Contact Form), and Google Analytics (Analytics). PWA is hosted on Netlify and will be moved to AWS (Elastic Beanstalk).
 
 ![web-screenshot](https://user-images.githubusercontent.com/50670255/74109446-99069100-4b51-11ea-8f3c-bb3d7ea3ecf0.png)
 
