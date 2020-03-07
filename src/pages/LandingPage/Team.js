@@ -9,6 +9,7 @@ import mattGardner from "../../images/team/mattGardner.jpg";
 import michaelWicks from "../../images/team/michaelWicks.jpg";
 import nathanHanson from "../../images/team/nathanHanson.jpg";
 import zachKousens from "../../images/team/zachKousens.jpg";
+import jarekNabrzyski from "../../images/team/jarekNabrzyski.jpg";
 
 class Team extends Component {
 	render() {
@@ -342,6 +343,47 @@ class Team extends Component {
 								<div className="team text-center">
 									<div className="position-relative">
 										<img
+											src={jarekNabrzyski}
+											className="img-fluid d-block rounded-pill mx-auto shadow border"
+											alt=""
+										/>
+										<ul className="list-unstyled social-icon team-icon mb-0 mt-4">
+											<li className="list-inline-item">
+												<a
+													href="https://www.linkedin.com/in/jarek-nabrzyski-b10a8277/"
+													className="rounded mr-1"
+												>
+													<i
+														className="mdi mdi-linkedin-box"
+														title="LinkedIn"
+													></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div className="content pt-3 pb-3">
+										<h5 className="mb-0">
+											<a
+												href="https://www.linkedin.com/in/jarek-nabrzyski-b10a8277/"
+												className="team-name text-dark"
+											>
+												Jarek Nabrzyski
+											</a>
+										</h5>
+										<small
+											className="designation text-muted"
+											style={{ opacity: "75%" }}
+										>
+											Technical Advisor
+										</small>
+									</div>
+								</div>
+							</Col>
+
+							<Col lg={3} md={6} className="mt-4 pt-2">
+								<div className="team text-center">
+									<div className="position-relative">
+										<img
 											src={nathanHanson}
 											className="img-fluid d-block rounded-pill mx-auto shadow border"
 											alt=""
@@ -387,7 +429,9 @@ class Team extends Component {
 									</div>
 								</div>
 							</Col>
+						</Row>
 
+						<Row>
 							<Col lg={3} md={6} className="mt-4 pt-2">
 								<div className="team text-center">
 									<div className="position-relative">
