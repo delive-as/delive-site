@@ -49,6 +49,7 @@ class Action extends Component {
 										to="#"
 										onClick={this.openModal}
 										className="video-play-icon watch text-dark mb-2 ml-2"
+										aria-label="Delive video action"
 									>
 										<i className="mdi mdi-play play-icon-circle text-center d-inline-block mr-2 rounded-pill text-white position-relative play play-iconbar"></i>{" "}
 									</Link>
@@ -68,7 +69,6 @@ class Action extends Component {
 												isOpen: false
 											})
 										}
-										aria-label="Delive video action"
 									/>
 								</div>
 							</div>

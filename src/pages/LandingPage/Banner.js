@@ -138,6 +138,7 @@ class Banner extends Component {
 														onClick={this.openModal}
 														to="#"
 														className="video-play-icon watch text-dark"
+														aria-label="Delive video banner"
 													>
 														<i className="mdi mdi-play play-icon-circle text-center d-inline-block mr-2 rounded-pill text-white position-relative play play-iconbar"></i>{" "}
 														WATCH VIDEO
@@ -152,7 +153,6 @@ class Banner extends Component {
 															isOpen: false
 														})
 													}
-													aria-label="Delive video banner"
 												/>
 											</div>
 										</div>
