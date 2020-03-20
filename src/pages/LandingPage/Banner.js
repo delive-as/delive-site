@@ -152,6 +152,7 @@ class Banner extends Component {
 															isOpen: false
 														})
 													}
+													aria-label="Delive video banner"
 												/>
 											</div>
 										</div>

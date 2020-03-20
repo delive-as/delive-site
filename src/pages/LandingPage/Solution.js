@@ -54,6 +54,7 @@ class Solution extends Component {
 											onClick={this.openModal}
 											to="#"
 											className="play-btn shadow video-play-icon"
+											aria-label="Delive video solution"
 										>
 											<i className="mdi mdi-play text-primary rounded-pill bg-white shadow"></i>
 										</Link>

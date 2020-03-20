@@ -68,6 +68,7 @@ class Action extends Component {
 												isOpen: false
 											})
 										}
+										aria-label="Delive video action"
 									/>
 								</div>
 							</div>
