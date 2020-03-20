@@ -107,15 +107,15 @@ class ContactForm extends Component {
 					method="post"
 					onSubmit={this.handleSubmit}
 				>
-					<input type="hidden" name="form-name" value="contact" />
 					<Row>
 						<Col md={12}>
 							<div className="form-group position-relative">
-								<label>
+								<label htmlFor="name">
 									Name <span className="text-danger">*</span>
 								</label>
 								<i className="mdi mdi-account ml-3 icons"></i>
 								<input
+									id="name"
 									name="name"
 									value={this.state.name}
 									onChange={this.handleName}
@@ -127,11 +127,12 @@ class ContactForm extends Component {
 						</Col>
 						<Col md={12}>
 							<div className="form-group position-relative">
-								<label>
+								<label htmlFor="email">
 									Email <span className="text-danger">*</span>
 								</label>
 								<i className="mdi mdi-at ml-3 icons"></i>
 								<input
+									id="email"
 									name="email"
 									value={this.state.email}
 									onChange={this.handleEmail}
@@ -143,12 +144,13 @@ class ContactForm extends Component {
 						</Col>
 						<Col md={12}>
 							<div className="form-group position-relative">
-								<label>
+								<label htmlFor="subject">
 									Subject{" "}
 									<span className="text-danger">*</span>
 								</label>
 								<i className="mdi mdi-email ml-3 icons"></i>
 								<input
+									id="subject"
 									name="subject"
 									value={this.state.subject}
 									onChange={this.handleSubject}
@@ -160,12 +162,13 @@ class ContactForm extends Component {
 						</Col>
 						<Col md={12}>
 							<div className="form-group position-relative">
-								<label>
+								<label htmlFor="message">
 									Message{" "}
 									<span className="text-danger">*</span>
 								</label>
 								<i className="mdi mdi-comment-text-outline ml-3 icons"></i>
 								<textarea
+									id="message"
 									name="message"
 									value={this.state.message}
 									onChange={this.handleMessage}
