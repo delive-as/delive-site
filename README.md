@@ -18,7 +18,7 @@ Progressive Web Application (PWA) developed in React (CRA) for frontend and will
 - [ ] Add 404 error page
 - [ ] Fix 404 error page
 - [ ] Optimize to be PWA (add service worker and manifest)
-- [ ] Optimize images (resize images)
+- [ ] Optimize images (resize)
 - [ ] Integrate with Flask & Express backend
 - [ ] Host in AWS (Elastic Beanstalk)
 - [ ] Create and integrate cloud-based database (DynamoDB)
