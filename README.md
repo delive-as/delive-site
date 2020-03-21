@@ -14,7 +14,6 @@ Progressive Web Application (PWA) developed in React (CRA) for frontend and will
 - [x] Integrate Google Maps API
 - [x] Fix contact form (EmailJS)
 - [x] Fix site metadata
-- [x] Delete unused dependencies (depcheck/npm-check-unused)
 - [x] Delete unused assets (images, CSS)
 - [ ] Add 404 error page
 - [ ] Fix 404 error page
@@ -26,5 +25,6 @@ Progressive Web Application (PWA) developed in React (CRA) for frontend and will
 - [ ] Create signup/login portal
 - [ ] Add dynamic forms for sign/login portal (formik or react-hook-form)
 - [ ] Add authentication for signup/login portal (OAuth)
+- [ ] Delete unused dependencies (depcheck/npm-check-unused)
 
 ---
