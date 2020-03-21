@@ -16,8 +16,9 @@ Progressive Web Application (PWA) developed in React (CRA) for frontend and will
 - [x] Fix site metadata
 - [x] Delete unused dependencies (depcheck/npm-check-unused)
 - [x] Delete unused assets (images, CSS)
-- [ ] Add 404 page
-- [ ] Optimize to be PWA (metadata image)
+- [ ] Add 404 error page
+- [ ] Fix 404 error page
+- [ ] Optimize to be PWA (add service worker and manifest)
 - [ ] Optimize images (resize images)
 - [ ] Integrate with Flask & Express backend
 - [ ] Host in AWS (Elastic Beanstalk)
