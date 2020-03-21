@@ -13,7 +13,6 @@ Progressive Web Application (PWA) developed in React (CRA) for frontend and will
 - [x] Integrate Google Maps API
 - [x] Fix contact form (EmailJS)
 - [x] Fix site metadata
-- [x] Delete unused assets (images, CSS)
 - [x] Optimize site performance through PWA lighthouse audit
 - [ ] Integrate Google Analytics API
 - [ ] Add 404 error page
