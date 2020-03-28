@@ -14,7 +14,7 @@ Progressive Web Application (PWA) developed in React (CRA) and will be integrate
 - [x] Fix contact form (EmailJS)
 - [x] Fix site metadata
 - [x] Optimize site performance through PWA lighthouse audit
-- [ ] Fix metadata image
+- [x] Fix metadata image
 - [ ] Fix favicon sizes
 - [ ] Integrate Google Analytics API
 - [ ] Add 404 error page
