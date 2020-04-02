@@ -20,10 +20,10 @@ Progressive Web Application (PWA) developed in React (CRA) and will be integrate
 - [ ] Add 404 error page
 - [ ] Fix 404 error page
 - [ ] Optimize to be PWA (add service worker and manifest)
+- [ ] Convert JavaScript to TypeScript
+- [ ] Integrate Next backend
+- [ ] Switch hosting to ZEIT Now after Next integration
 - [ ] Optimize images (resize)
-- [ ] Integrate with Flask & Express backend (Parse Server)
-- [ ] Host in AWS (Elastic Beanstalk)
-- [ ] Create and integrate cloud-based database (DynamoDB)
 - [ ] Create signup/login portal
 - [ ] Add dynamic forms for sign/login portal (formik or react-hook-form)
 - [ ] Add authentication for signup/login portal (OAuth)
