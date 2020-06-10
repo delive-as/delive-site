@@ -3,7 +3,7 @@ import {
 	Route,
 	Switch,
 	BrowserRouter as Router,
-	withRouter
+	withRouter,
 } from "react-router-dom";
 
 import Layout from "./components/Layout/";
@@ -12,6 +12,10 @@ import "./Apps.scss";
 import "./css/materialdesignicons.min.css";
 
 import routes from "./routes";
+
+import ReactGA from "react-ga";
+ReactGA.initialize("UA-150731209-6");
+ReactGA.pageview("/");
 
 function withLayout(WrappedComponent) {
 	return class extends React.Component {
