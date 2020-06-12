@@ -16,14 +16,13 @@ Progressive Web Application (PWA) developed in React (CRA) and will be integrate
 - [x] Optimize site performance through PWA lighthouse audit
 - [x] Fix metadata image
 - [x] Integrate Google Analytics API
+- [x] Optimize images through Netlify plugin
 - [ ] Fix favicon sizes
 - [ ] Add 404 error page
 - [ ] Fix 404 error page
 - [ ] Optimize to be PWA (add service worker and manifest)
-- [ ] Convert JavaScript to TypeScript
 - [ ] Integrate Next backend
 - [ ] Switch hosting to ZEIT Now after Next integration
-- [ ] Optimize images (resize)
 - [ ] Create signup/login portal
 - [ ] Add dynamic forms for sign/login portal (formik or react-hook-form)
 - [ ] Add authentication for signup/login portal (OAuth)
