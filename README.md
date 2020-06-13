@@ -21,11 +21,6 @@ Progressive Web Application (PWA) developed in React (CRA) and will be integrate
 - [ ] Add 404 error page
 - [ ] Fix 404 error page
 - [ ] Optimize to be PWA (add service worker and manifest)
-- [ ] Integrate Next backend
-- [ ] Switch hosting to ZEIT Now after Next integration
-- [ ] Create signup/login portal
-- [ ] Add dynamic forms for sign/login portal (formik or react-hook-form)
-- [ ] Add authentication for signup/login portal (OAuth)
 - [ ] Delete unused dependencies (depcheck/npm-check-unused)
 
 ---
