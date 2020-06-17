@@ -1,5 +1,6 @@
 {
-	"name": "DeLive",
+	"name": "delive-site",
+	"description": "At DeLive, we aim to revolutionize emergency medical services (EMS) and save more lives by arriving earlier than the first responder with drone fly-ahead technology.",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
