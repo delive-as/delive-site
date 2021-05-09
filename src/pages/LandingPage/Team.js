@@ -149,7 +149,7 @@ class Team extends Component {
 													></i>
 												</a>
 												<a
-													href="https://www.linkedin.com/in/lockjio/"
+													href="https://www.linkedin.com/in/saejhi/"
 													className="rounded mr-1"
 												>
 													<i
@@ -158,7 +158,7 @@ class Team extends Component {
 													></i>
 												</a>
 												<a
-													href="https://github.com/lockjio"
+													href="https://github.com/saejhi"
 													className="rounded mr-1"
 												>
 													<i
@@ -172,7 +172,7 @@ class Team extends Component {
 									<div className="content pt-3 pb-3">
 										<h5 className="mb-0">
 											<a
-												href="https://www.linkedin.com/in/lockjio/"
+												href="https://www.linkedin.com/in/saejhi/"
 												className="team-name text-dark"
 											>
 												Jio Buenviaje
